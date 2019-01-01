@@ -13,14 +13,13 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrls: ['./tutors.component.css']
 })
 export class TutorsComponent implements OnInit {
-  formerror=true
   enqhometut:EnquiryHomeTutor={}
   enqschooltut:EnquirySchoolTutor={}
   enqcoachingtut:EnquiryCoachingTutor={}
   tutor:Tutor={}
   demo:{date?:Date,name?:string,contact?:string}={}
   constructor(public tutorservice:TutorService,public title:Title,public meta:Meta) { 
-    this.title.setTitle('Orurental Tutors')
+    this.title.setTitle('Oru Home Tuitions')
     this.meta.updateTag({ name: 'description', content: 'join best home tutor in udaipur if you are looking for tuition classes in udaipur we are top udaipur tutors we provides best home tuitions in udaipur' })
   }
 
@@ -41,13 +40,13 @@ export class TutorsComponent implements OnInit {
         setTimeout(()=>{ this.tutorservice.enquiryalert=true }, 4000)
       }
       else{
-        this.formerror=false
-        setTimeout(()=>{ this.formerror=true }, 4000)
+        this.tutorservice.dangeralert=false
+        setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
       }
     }
     else{
-      this.formerror=false
-      setTimeout(()=>{ this.formerror=true }, 4000)
+      this.tutorservice.dangeralert=false
+      setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
     }
     
   }
@@ -63,13 +62,13 @@ export class TutorsComponent implements OnInit {
         setTimeout(()=>{ this.tutorservice.enquiryalert=true }, 4000)
       }
       else{
-        this.formerror=false
-        setTimeout(()=>{ this.formerror=true }, 4000)
+        this.tutorservice.dangeralert=false
+        setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
       }
     }
     else{
-      this.formerror=false
-      setTimeout(()=>{ this.formerror=true }, 4000)
+      this.tutorservice.dangeralert=false
+      setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
     }
   }
 
@@ -84,13 +83,13 @@ export class TutorsComponent implements OnInit {
         setTimeout(()=>{ this.tutorservice.enquiryalert=true }, 4000)
       }
       else{
-        this.formerror=false
-        setTimeout(()=>{ this.formerror=true }, 4000)
+        this.tutorservice.dangeralert=false
+        setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
       }
     }
     else{
-      this.formerror=false
-      setTimeout(()=>{ this.formerror=true }, 4000)
+      this.tutorservice.dangeralert=false
+      setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
     }
   }
 
@@ -105,13 +104,13 @@ export class TutorsComponent implements OnInit {
         setTimeout(()=>{ this.tutorservice.enquiryalert=true }, 4000)
       }
       else{
-        this.formerror=false
-        setTimeout(()=>{ this.formerror=true }, 4000)
+        this.tutorservice.dangeralert=false
+        setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
       }
     }
     else{
-      this.formerror=false
-      setTimeout(()=>{ this.formerror=true }, 4000)
+      this.tutorservice.dangeralert=false
+      setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
     }
   }
   addDemo(){
@@ -125,13 +124,13 @@ export class TutorsComponent implements OnInit {
         setTimeout(()=>{ this.tutorservice.enquiryalert=true }, 4000)
       }
       else{
-        this.formerror=false
-        setTimeout(()=>{ this.formerror=true }, 4000)
+        this.tutorservice.dangeralert=false
+        setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
       }
     }
     else{
-      this.formerror=false
-      setTimeout(()=>{ this.formerror=true }, 4000)
+      this.tutorservice.dangeralert=false
+      setTimeout(()=>{ this.tutorservice.dangeralert=true }, 4000)
     }
   }
 
